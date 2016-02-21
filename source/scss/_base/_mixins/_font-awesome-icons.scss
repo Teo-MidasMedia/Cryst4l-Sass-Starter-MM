@@ -1,0 +1,10 @@
+/*
+* Font awesome icons
+*/
+@mixin font-awesome-icon($icon, $size: 1em, $colour: $body-text-colour, $margin:0){
+	content:$icon;
+	font-family:FontAwesome;
+	font-size:$size;
+	color:$colour;
+	margin:$margin;
+}

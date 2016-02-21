@@ -1,0 +1,6 @@
+/*
+* Wrapping classes
+*/
+@mixin max-width($width){
+	max-width:$width;
+}

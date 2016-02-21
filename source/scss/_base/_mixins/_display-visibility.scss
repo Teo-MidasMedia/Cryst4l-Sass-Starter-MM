@@ -1,0 +1,8 @@
+/*
+* Display 
+* Visibility
+*/
+@mixin display-visiblity($display, $visibility) {
+    display:$display;
+	visibility: $visibility;
+}
