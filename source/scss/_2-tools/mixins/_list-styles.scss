@@ -2,12 +2,7 @@
 * List styles
 * Usage: 
 */
-$ls-args: (
-  $list-style:outside none none,
-  $padding:0, 
-  $margin:0
-);
-@mixin list-styles($ls-args) {
+@mixin list-styles($list-style:outside none none, $padding:0, $margin:0) {
     list-style:$list-style; 
     padding:$padding;
     margin:$margin;

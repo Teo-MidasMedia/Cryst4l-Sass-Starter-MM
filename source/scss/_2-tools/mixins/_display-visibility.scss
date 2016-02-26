@@ -2,11 +2,7 @@
 * Display 
 * Visibility
 */
-$dv-args: (
-  $display: null,
-  $visibility: null  
-);
-@mixin display-visiblity($dv-args) {
+@mixin display-visiblity($display: null, $visibility: null) {
     display:$display;
 	visibility: $visibility;
 }

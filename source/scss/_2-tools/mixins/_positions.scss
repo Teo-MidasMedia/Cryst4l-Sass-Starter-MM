@@ -1,14 +1,7 @@
 /*
 * Positions
 */
-$p-args: (
-  $position,
-  $top,
-  $right, 
-  $bottom, 
-  $left
-);
-@mixin position($p-args){
+@mixin position($position, $top:null, $right:null, $bottom:null, $left:null){
 	position:$position;
 	top:$top;
 	right:$right;

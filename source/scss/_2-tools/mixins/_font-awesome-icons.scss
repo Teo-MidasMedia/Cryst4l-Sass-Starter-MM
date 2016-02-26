@@ -1,13 +1,7 @@
 /*
 * Font awesome icons
 */
-$fai-args: (
-  $icon,
-  $size: 1em,
-  $colour: $base-text-colour,
-  $margin:null
-);
-@mixin font-awesome-icon($fai-args){
+@mixin font-awesome-icon($icon, $size: 1em, $colour: $base-text-colour, $margin:null){
 	content:$icon;
 	font-family:FontAwesome;
 	font-size:$size;

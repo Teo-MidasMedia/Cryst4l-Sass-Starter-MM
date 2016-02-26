@@ -19,20 +19,15 @@ $base-text-colour: $dark;
 
 /*
 * Font size
-* Based on https://github.com/rbrtsmith/ui-example/
 */
-$root-sizing-unit:  100%; /* [1] */
-$root-sizing-coefficient: 18; /* [2] */
+$text-xxl:55px;
+$text-xl: 40px;
+$text-lg: 30px;
+$text-md: 20px;
+$text-sm: 16px;
+$text-xs: 14px;
 
-/* [3]		[4]	    [5]     [6] */
-$txt-xxl:   55px,   4.5,    true;
-$txt-xl:    40px, 	0,		true;
-$txt-lg:    30px, 	-1,		false;
-$txt-md:    20px, 	-2.5,	false;
-$txt-sm:    16px, 	-3.6,	false;
-$txt-xs:    14px, 	-3.6,	false;
-
-$base-font-size: $txt-sm; /* [7] */
+$base-font-size: $text-sm; 
 
 /*
 * Fonts
@@ -44,6 +39,18 @@ $secondary-font: serif;
 * Line height
 */
 $base-line-height:1.5;
+
+
+/*
+* Wrapping widths
+*/
+$width-lg: 1200px;
+$width-md: 980px;
+$width-sm: 768px;
+$width-sl: 640px;
+$width-xs: 480px;
+$width-xt: 320px;
+
 
 /*
 * Misc
