@@ -1,11 +1,24 @@
-//@import '_base/_variables/_colours...';
-//@import '_base/_variables/_typography...';
-@import '_base/_mixins/*';
-//@import '_base/_functions...';
-//@import '_base/_extends...';
+/*
+* 1. Settings
+*/
+@import '_1-settings/_enable-features;
+@import '_1-settings/_variables;
+    
+/*
+* 2. Tools
+*/
+@import '_2-tools/functions/*';
+@import '_2-tools/mixins/*';
+@import '_2-tools/extends/*';
+
+/*
+* 3. Resets
+*/
 @import '_base/_reset/_normalize';
+
+
 //@import '_layout/_breakpoints';
-@import '_layout/_grid';
+//@import '_layout/_grid';
 //@import '_layout/_media-queries';
 //@import '_components/*';
 //@import '_modules/*';

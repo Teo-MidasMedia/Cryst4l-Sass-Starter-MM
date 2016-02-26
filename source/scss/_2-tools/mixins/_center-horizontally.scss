@@ -1,7 +1,11 @@
 /*
 * Center horizontally
 */
-@mixin center-horizontally($margin-top, $margin-bottom){
+$ch-args: (
+  $margin-top:0,
+  $margin-bottom:0
+);
+@mixin center-horizontally($ch-args){
 	display: block;
 	margin: $margin-top auto $margin-bottom auto;
 }

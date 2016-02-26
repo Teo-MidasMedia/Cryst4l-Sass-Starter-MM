@@ -1,0 +1,12 @@
+/*
+* Display 
+* Visibility
+*/
+$dv-args: (
+  $display: null,
+  $visibility: null  
+);
+@mixin display-visiblity($dv-args) {
+    display:$display;
+	visibility: $visibility;
+}

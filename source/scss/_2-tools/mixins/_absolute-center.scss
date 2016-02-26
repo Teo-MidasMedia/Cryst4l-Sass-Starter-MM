@@ -1,8 +1,9 @@
 /*
 * Absolute center
+* Position should be absolute or relative
 */
 @mixin center-horizontally($position){
-	position: $position; //Should be relative or absolute
+	position: $position;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
