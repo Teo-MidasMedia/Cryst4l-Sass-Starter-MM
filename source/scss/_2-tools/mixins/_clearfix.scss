@@ -1,7 +1,5 @@
 /*
 * Clearfix
-* Clear flots on child elements
-* Usage: .selector{ @include clearfix(); }
 */
 @mixin clearfix() {
     *zoom: 1;

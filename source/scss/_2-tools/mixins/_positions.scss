@@ -2,9 +2,13 @@
 * Positions
 */
 @mixin position($position, $top:null, $right:null, $bottom:null, $left:null){
-	position:$position;
-	top:$top;
-	right:$right;
-	bottom:$bottom;
-	left:$left;
+	@if($top == "" and $right == "" and $bottom == "" and $left == "") {
+		$position: $position;
+	} @else {
+		position: $position;
+		top: $top;
+		right: $right;
+		bottom: $bottom;
+		left: $left;
+	}
 }

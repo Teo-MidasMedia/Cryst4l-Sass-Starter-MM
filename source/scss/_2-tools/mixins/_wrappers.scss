@@ -9,6 +9,6 @@
 	.#{$class}--max-md { @include max-width($md); }
     .#{$class}--max-sm { @include max-width($sm); }
     .#{$class}--max-sl { @include max-width($sl); }
-	.#{$class}--max-xl { @include max-width($xl); }
+	.#{$class}--max-xs { @include max-width($xs); }
 	.#{$class}--max-xt { @include max-width($xt); }
 }

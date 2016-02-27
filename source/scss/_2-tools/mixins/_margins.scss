@@ -1,16 +1,19 @@
 /*
-* Margin shorthand
+* Margins
 */
-@mixin margin-shorthand($margin) {
-    margin: $margin;
-}
-
-/*
-* Margin longhand
-*/
-@mixin margin-longhand($top: null, $right: null, $bottom: null, $left: null) {
-	margin-top: $top;
-	margin-right: $right;
-	margin-bottom: $bottom;
-	margin-left: $left;
+@mixin margin($margin,  $sides...){
+    @if ($margin != "") {
+        @if ($sides == "") {
+            margin: $margin;
+        } @else {
+            @each $side in $sides {
+               @if ($side == 'top' or
+                    $side == 'right' or
+                    $side == 'bottom' or
+                    $side == 'left') {
+                    margin-#{$side}: $margin;
+                }
+            }
+        }
+    }
 }

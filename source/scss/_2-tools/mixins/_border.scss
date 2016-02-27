@@ -1,17 +1,17 @@
 /*
-* Paddings
+* Border
 */
-@mixin padding($padding,  $sides...){
-    @if ($padding != "") {
+@mixin border($style,  $sides...){
+    @if ($style != "") {
         @if ($sides == "") {
-            padding: $padding;
+            border: $style;
         } @else {
             @each $side in $sides {
                @if ($side == 'top' or
                     $side == 'right' or
                     $side == 'bottom' or
                     $side == 'left') {
-                    padding-#{$side}: $padding;
+                    border-#{$side}: $style;
                 }
             }
         }

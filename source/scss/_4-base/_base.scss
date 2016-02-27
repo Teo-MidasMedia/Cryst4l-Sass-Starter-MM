@@ -1,4 +1,4 @@
-/*-- Base
+/*-- 4. Base >> Base
 ========================================================================== --*/
 *, *:after, *:before {
 	font-smoothing: antialiased;
@@ -14,22 +14,20 @@ html {
 }
 body {
     font-size: $base-font-size;
-    color: $base-text-color;
+    color: $base-text-colour;
     line-height: $base-line-height;
     font-family: $primary-font;
 	&.no-overflow{
-		width:100vw;
-		overflow:hidden;
-		position:fixed;
+		@include no-overflow();
 	}
 }
 img {
-	max-width: 100%;
+	@include max-width(100%);
 	vertical-align: bottom;
-	border: 0;
+	border: none;
 	height: auto;
 }
 hr {
-    border: 0;
-    border-bottom: 1px solid $base-border-color;
+    border: none;
+    @include border(1px solid $base-border-colour, bottom);
 }

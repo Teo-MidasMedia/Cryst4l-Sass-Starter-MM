@@ -18,7 +18,7 @@ gulp.task('css', function() {
                 browsers: ['last 4 versions'],
                 cascade: false
             }))
-            .pipe(cssnano())
+            //.pipe(cssnano())
             .pipe(rename({suffix: '.min'}))
         .pipe(sourcemaps.write('.'))
         .pipe(gulp.dest('build/css'));

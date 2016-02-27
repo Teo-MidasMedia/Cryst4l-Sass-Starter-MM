@@ -1,7 +1,7 @@
 /*
 * Convert pixels to ems
 */
-@function calculateEm(em($pixels, $context: $base-font-size) {
+@function calculateEm($pixels, $context: $base-font-size) {
   @if (unitless($pixels)) {
     $pixels: $pixels * 1px;
   }

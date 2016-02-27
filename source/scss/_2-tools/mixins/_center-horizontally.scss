@@ -5,7 +5,3 @@
 	display: block;
 	margin: $margin-top auto $margin-bottom auto;
 }
-
-h1{
-	@include center-horizontally(10px, 10px);
-}
