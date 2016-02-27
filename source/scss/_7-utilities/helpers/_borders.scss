@@ -1,0 +1,60 @@
+/*-- 7. Utilities >> Helpers >> Borders
+========================================================================== --*/
+@if ($use-borders) {
+	.u-border{
+		@include border(1px solid $base-border-colour);
+	}
+	.u-border--top{
+		@include border(1px solid $base-border-colour, top);
+	}
+	.u-border--right{
+		@include border(1px solid $base-border-colour, right);
+	}
+	.u-border--bottom{
+		@include border(1px solid $base-border-colour, bottom);
+	}
+	.u-border--left{
+		@include border(1px solid $base-border-colour, left);
+	}
+	
+	@include xs-up {
+		@mixin generate-borders-xs-up($class) {
+			.#{$class}\@xs-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@xs-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@xs-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@xs-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@xs-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-xs-up(u-border);
+	}
+	@include sm-up {
+		@mixin generate-borders-sm-up($class) {
+			.#{$class}\@sm-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@sm-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@sm-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@sm-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@sm-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-sm-up(u-border);
+	}
+	@include md-up {
+		@mixin generate-borders-md-up($class) {
+			.#{$class}\@md-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@md-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@md-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@md-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@md-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-md-up(u-border);
+	}
+	@include lg-up {
+		@mixin generate-borders-lg-up($class) {
+			.#{$class}\@lg-up { @include border(1px solid $base-border-colour); }
+			.#{$class}--top\@lg-up { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\@lg-up { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom\@lg-up { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left\@lg-up { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders-lg-up(u-border);
+	}
+} //endif

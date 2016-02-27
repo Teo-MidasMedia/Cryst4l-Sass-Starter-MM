@@ -52,6 +52,16 @@ $width-sl: 640px;
 $width-xs: 480px;
 $width-xt: 320px;
 
+/*
+* Widths
+*/
+$lg: 1200px;
+$md: 980px;
+$sm: 768px;
+$sl: 640px;
+$xs: 480px;
+$xt: 320px;
+
 /**
  * Media query breakpoints.
  * You can choose how many, the namespace and breakpoint value.
@@ -68,13 +78,14 @@ $width-xt: 320px;
  */
 $grid-breakpoints: (
     /* [1]       [2] */
-    ( xt-up,    320px ),
-    ( xs-up,    480px ),
-    ( sl-up,    640px ),
-    ( sm-up,    768px ),
-    ( md-up,    980px ),
-    ( lg-up,    1200px ),
+    ( xt-up,    $xt ),
+    ( xs-up,    $xs ),
+    ( sl-up,    $sl ),
+    ( sm-up,    $sm ),
+    ( md-up,    $md ),
+    ( lg-up,    $lg ),
 ) !default;
+
 
 /*
 * Misc

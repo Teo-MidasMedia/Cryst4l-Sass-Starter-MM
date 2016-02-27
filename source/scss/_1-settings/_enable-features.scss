@@ -1,6 +1,7 @@
 /*-- 1. Settings >> Enable / disable features 
 ========================================================================== --*/
-$use-wrapping-classes: true;
+$use-wrapping-classes: true !default;
+$use-borders: true !default;
 
 $use-grid:               true !default;
 

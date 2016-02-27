@@ -28,6 +28,12 @@
 @import '_5-objects/generic/*';
 
 /*
+* 6. Components
+*/
+@import '_6-components/generic/*';
+
+/*
 * 7. Utilities
 */
-@import '_7-utilities/*';
+@import '_7-utilities/generic/*';
+@import '_7-utilities/helpers/*';
