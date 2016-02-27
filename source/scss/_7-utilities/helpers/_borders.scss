@@ -1,21 +1,14 @@
 /*-- 7. Utilities >> Helpers >> Borders
 ========================================================================== --*/
 @if ($use-borders) {
-	.u-border{
-		@include border(1px solid $base-border-colour);
-	}
-	.u-border--top{
-		@include border(1px solid $base-border-colour, top);
-	}
-	.u-border--right{
-		@include border(1px solid $base-border-colour, right);
-	}
-	.u-border--bottom{
-		@include border(1px solid $base-border-colour, bottom);
-	}
-	.u-border--left{
-		@include border(1px solid $base-border-colour, left);
-	}
+	@mixin generate-borders($class) {
+			.#{$class} { @include border(1px solid $base-border-colour); }
+			.#{$class}--top { @include border(1px solid $base-border-colour, top); }
+			.#{$class}--right\ { @include border(1px solid $base-border-colour, right); }
+			.#{$class}--bottom { @include border(1px solid $base-border-colour, bottom); }
+			.#{$class}--left { @include border(1px solid $base-border-colour, left); }
+		}
+		@include generate-borders(u-border);
 	
 	@include xs-up {
 		@mixin generate-borders-xs-up($class) {
