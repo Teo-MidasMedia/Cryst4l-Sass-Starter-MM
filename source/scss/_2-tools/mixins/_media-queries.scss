@@ -3,12 +3,12 @@
  */
  
 @mixin xxs-up {
-    @media (min-width: $xxs+1) {
+    @media screen and ( min-width: calculateEm($xxs+1)) {
         @content;
     }
 }
 @mixin xxs-down {
-    @media (max-width: $xxs) {
+    @media screen and ( max-width: calculateEm($xxs)) {
         @content;
     }
 }
@@ -19,12 +19,12 @@
  */
 
 @mixin xs-up {
-	@media (min-width: $xs+1) {
+	@media screen and ( min-width: calculateEm($xs+1)) {
 		@content;
 	}
 }
 @mixin xs-down {
-	@media (max-width: $xs) {
+	@media screen and ( max-width: calculateEm($xs)) {
 		@content;
 	}
 }
@@ -35,12 +35,12 @@
  */
 
 @mixin sm-up {
-	@media (min-width: $sm+1) {
+	@media screen and ( min-width: calculateEm($sm+1)) {
 		@content;
 	}
 }
 @mixin sm-down {
-	@media (max-width: $sm) {
+	@media screen and ( max-width: calculateEm($sm)) {
 		@content;
 	}
 }
@@ -51,12 +51,12 @@
  */
 
 @mixin md-up {
-	@media (min-width: $md+1) {
+	@media screen and ( min-width: calculateEm($md+1)) {
 		@content;
 	}
 }
 @mixin md-down {
-	@media (max-width: $md) {
+	@media screen and ( max-width: calculateEm($md)) {
 		@content;
 	}
 }
@@ -67,29 +67,12 @@
  */
 
 @mixin lg-up {
-	@media (min-width: $lg+1) {
+	@media screen and ( min-width: calculateEm($lg+1)) {
 		@content;
 	}
 }
 @mixin lg-down {
-	@media (max-width: $lg) {
+	@media screen and ( max-width: calculateEm($lg)) {
 		@content;
 	}
-}
-
-
-/**
- * retina
- */
-
-@mixin retina {
-  @media
-    only screen and (-webkit-min-device-pixel-ratio: 2),
-    only screen and (min--moz-device-pixel-ratio: 2),
-    only screen and (-o-min-device-pixel-ratio: 2/1),
-    only screen and (min-device-pixel-ratio: 2),
-    only screen and (min-resolution: 192dpi),
-    only screen and (min-resolution: 2dppx) {
-    @content;
-  }
 }
