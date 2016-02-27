@@ -1,0 +1,35 @@
+/*-- Base
+========================================================================== --*/
+*, *:after, *:before {
+	font-smoothing: antialiased;
+	text-rendering: optimizeLegibility;
+	@include box-sizing;
+	-webkit-overflow-scrolling:touch;
+}
+html {
+    min-height:100%;        
+    &.touch {
+        cursor: pointer;
+    } 
+}
+body {
+    font-size: $base-font-size;
+    color: $base-text-color;
+    line-height: $base-line-height;
+    font-family: $primary-font;
+	&.no-overflow{
+		width:100vw;
+		overflow:hidden;
+		position:fixed;
+	}
+}
+img {
+	max-width: 100%;
+	vertical-align: bottom;
+	border: 0;
+	height: auto;
+}
+hr {
+    border: 0;
+    border-bottom: 1px solid $base-border-color;
+}

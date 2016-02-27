@@ -4,3 +4,11 @@
 @mixin max-width($width){
 	max-width:$width;
 }
+@mixin wrapping-classes($class, $lg, $md, $sm, $sl, $xs, $xt) {
+    .#{$class}--max-lg { @include max-width($lg); }
+	.#{$class}--max-md { @include max-width($md); }
+    .#{$class}--max-sm { @include max-width($sm); }
+    .#{$class}--max-sl { @include max-width($sl); }
+	.#{$class}--max-xl { @include max-width($xl); }
+	.#{$class}--max-xt { @include max-width($xt); }
+}
