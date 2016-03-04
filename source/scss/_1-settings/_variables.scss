@@ -42,8 +42,8 @@ $secondary-font: serif;
 $base-line-height:1.5;
 
 /*
-* Max widths
-* Used with wrapping classes 
+* Fixed widths
+* Used for max widths with wrapping classes 
 */
 $width-lg: 1200px;
 $width-md: 980px;
@@ -51,6 +51,14 @@ $width-sm: 768px;
 $width-sl: 640px;
 $width-xs: 480px;
 $width-xt: 320px;
+
+$site-wrap-width: $width-lg;
+
+/*
+* Spacing unit
+*/
+$spacing-unit: ($base-line-height * 1rem); 
+$half-spacing-unit: ($spacing-unit / 2);
 
 /*
 * Widths

@@ -27,6 +27,9 @@ img {
 	border: none;
 	height: auto;
 }
+svg{
+	@include max-width(100%);
+}
 hr {
     border: none;
     @include border(1px solid $base-border-colour, bottom);

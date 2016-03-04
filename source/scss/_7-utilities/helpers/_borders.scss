@@ -50,4 +50,55 @@
 		}
 		@include generate-borders-lg-up(u-border);
 	}
+	
+	//No borders
+	@mixin generate-no-border-classes($class) {
+			.#{$class} { border:none !important; }
+			.#{$class}--top { border-top:none !important; }
+			.#{$class}--right\ { border-right:none !important; }
+			.#{$class}--bottom { border-bottom:none !important; }
+			.#{$class}--left { border-left:none !important; }
+		}
+		@include generate-no-border-classes(u-no-border);
+		
+	@include xs-up {
+		@mixin generate-no-border-classes-xs-up($class) {
+			.#{$class}\@xs-up { border:none !important; }
+			.#{$class}--top\@xs-up { border-top:none !important; }
+			.#{$class}--right\@xs-up { border-right:none !important; }
+			.#{$class}--bottom\@xs-up { border-bottom:none !important; }
+			.#{$class}--left\@xs-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-xs-up(u-no-border);
+	}
+	@include sm-up {
+		@mixin generate-no-border-classes-sm-up($class) {
+			.#{$class}\@sm-up { border:none !important; }
+			.#{$class}--top\@sm-up { border-top:none !important; }
+			.#{$class}--right\@sm-up { border-right:none !important; }
+			.#{$class}--bottom\@sm-up { border-bottom:none !important; }
+			.#{$class}--left\@sm-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-sm-up(u-no-border);
+	}
+	@include md-up {
+		@mixin generate-no-border-classes-md-up($class) {
+			.#{$class}\@md-up { border:none !important; }
+			.#{$class}--top\@md-up { border-top:none !important; }
+			.#{$class}--right\@md-up { border-right:none !important; }
+			.#{$class}--bottom\@md-up { border-bottom:none !important; }
+			.#{$class}--left\@md-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-md-up(u-no-border);
+	}
+	@include lg-up {
+		@mixin generate-no-border-classes-lg-up($class) {
+			.#{$class}\@lg-up { border:none !important; }
+			.#{$class}--top\@lg-up { border-top:none !important; }
+			.#{$class}--right\@lg-up { border-right:none !important; }
+			.#{$class}--bottom\@lg-up { border-bottom:none !important; }
+			.#{$class}--left\@lg-up { border-left:none !important; }
+		}
+		@include generate-no-border-classes-lg-up(u-no-border);
+	}
 } //endif
